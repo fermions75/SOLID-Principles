@@ -27,12 +27,12 @@ class NotificationService:
 # Usage
 email_sender = EmailSender()
 notification_service = NotificationService(email_sender)
-notification_service.notify("Hello, World!")
+notification_service.notify("Hi there, via Email!")
 
 
 sms_sender = SmsSender()
 notification_service = NotificationService(sms_sender)
-notification_service.notify("Hello, via SMS!")
+notification_service.notify("Hi there, SMS!")
 
 # Now, the NotificationService class is not tightly coupled to the EmailSender class.
 # We can easily add new ways to send notifications without modifying the NotificationService class. This adheres
